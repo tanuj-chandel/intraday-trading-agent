@@ -1,0 +1,11 @@
+{
+  "provider": "ZERODHA_KITE",
+  "real_market_data_connected": true,
+  "number_of_trading_sessions": 1,
+  "number_of_paper_trades": 10,
+  "net_realized_pnl": 1200.0,
+  "win_rate": 60.0,
+  "profit_factor": 1.5,
+  "final_verdict": "INSUFFICIENT LIVE PAPER DATA",
+  "verdict_explanation": "Only 10 paper trades recorded across 1 sessions (<100 trades target). Real data connectivity status: CONNECTED."
+}

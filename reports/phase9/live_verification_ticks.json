@@ -1,0 +1,42 @@
+﻿{
+  "timestamp": "2026-09-04T23:07:00+05:30",
+  "verification_mode": "LIVE_MARKET_DATA_VERIFICATION",
+  "broker_credentials_configured": false,
+  "market_status": "CLOSED",
+  "market_hours": "09:15-15:30 IST",
+  "ticks_captured": 0,
+  "live_feed_connected": false,
+  "reason": "Broker API credentials (ZERODHA_API_KEY, UPSTOX_ACCESS_TOKEN, ANGELONE_API_KEY) are not configured in backend/.env. Synthetic data substitution is strictly blocked by qualification gate.",
+  "adapters_tested": [
+    {
+      "provider": "ZERODHA_KITE",
+      "status": "UNCONFIGURED",
+      "connected": false,
+      "real_orders_disabled": true,
+      "error": "ZERODHA_API_KEY or ZERODHA_ACCESS_TOKEN not set in environment."
+    },
+    {
+      "provider": "UPSTOX",
+      "status": "UNCONFIGURED",
+      "connected": false,
+      "real_orders_disabled": true,
+      "error": "UPSTOX_ACCESS_TOKEN not configured in environment."
+    },
+    {
+      "provider": "ANGEL_ONE",
+      "status": "UNCONFIGURED",
+      "connected": false,
+      "real_orders_disabled": true,
+      "error": "ANGELONE_API_KEY or ANGELONE_JWT_TOKEN not configured."
+    }
+  ],
+  "provenance_state": "UNCONFIGURED",
+  "signal_generation_allowed": false,
+  "ui_indicator": {
+    "mode": "NO LIVE DATA",
+    "badge": "NO LIVE DATA",
+    "color": "rose",
+    "description": "No live broker data feed active. Signals strictly blocked."
+  },
+  "ticks": []
+}

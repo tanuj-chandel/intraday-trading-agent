@@ -1,0 +1,75 @@
+﻿{
+  "report_title": "Phase 9 Live Market Data End-to-End Verification Report",
+  "project": "AI Intraday Trading Agent India",
+  "generated_at": "2026-09-04T23:07:00+05:30",
+  "final_verdict": "LIVE DATA PARTIALLY VERIFIED — BLOCKED BY BROKER CREDENTIALS NOT CONFIGURED",
+  "verdict_details": {
+    "core_reason": "No live broker API credentials configured in backend/.env; current time is outside NSE trading session.",
+    "software_status": "READY — All pipelines, gates, models, security scans, and 306/306 tests verified.",
+    "paper_pilot_ready": false,
+    "synthetic_substitution_permitted": false
+  },
+  "test_suite": {
+    "total_tests": 306,
+    "passed": 306,
+    "failed": 0,
+    "phase1_to_8_baseline": 254,
+    "phase9_tests": 52
+  },
+  "security_audit": {
+    "tests_passed": 17,
+    "real_money_order_methods": 0,
+    "real_money_order_endpoints": 0,
+    "is_paper_trading": true,
+    "trading_mode": "PAPER",
+    "hierarchical_kill_switch": "ACTIVE",
+    "human_approval_mandatory": true
+  },
+  "broker_adapters": {
+    "zerodha_kite": {
+      "status": "UNCONFIGURED",
+      "connected": false,
+      "real_orders_disabled": true,
+      "streaming_socket": false
+    },
+    "upstox_v2": {
+      "status": "UNCONFIGURED",
+      "connected": false,
+      "real_orders_disabled": true,
+      "streaming_socket": false
+    },
+    "angel_one": {
+      "status": "UNCONFIGURED",
+      "connected": false,
+      "real_orders_disabled": true,
+      "streaming_socket": false
+    }
+  },
+  "provenance_and_quality_gate": {
+    "provenance_state": "UNCONFIGURED",
+    "can_generate_signals": false,
+    "ui_indicator": "NO LIVE DATA",
+    "freshness_cutoff_seconds": 30.0,
+    "fail_closed_verified": true
+  },
+  "frontend": {
+    "total_routes": 6,
+    "routes_compiled": [
+      "/",
+      "/_not-found",
+      "/backtesting",
+      "/data-health",
+      "/live",
+      "/phase9"
+    ]
+  },
+  "frozen_strategy": {
+    "name": "VWAP_EMA_MOMENTUM_V1",
+    "fast_ema": 9,
+    "slow_ema": 21,
+    "rvol_threshold": 1.15,
+    "atr_stop_loss_multiplier": 1.5,
+    "atr_take_profit_multiplier": 3.0,
+    "parameter_freeze_enforced": true
+  }
+}

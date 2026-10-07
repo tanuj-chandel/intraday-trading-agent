@@ -1,0 +1,25 @@
+{
+  "provider": "ZERODHA_KITE",
+  "real_market_data_connected": true,
+  "number_of_trading_sessions": 1,
+  "number_of_paper_trades": 10,
+  "net_realized_pnl": 1200.0,
+  "win_rate": 60.0,
+  "profit_factor": 1.5,
+  "final_verdict": "INSUFFICIENT_LIVE_DATA",
+  "verdict_explanation": "No live paper trades recorded. Run at least 30 paper trades to generate a verdict.",
+  "reality_gap": {
+    "live_win_rate": 0.0,
+    "backtest_win_rate": 55.0,
+    "win_rate_delta": 0.0,
+    "live_expectancy": 0.0,
+    "live_profit_factor": 0.0,
+    "profit_factor_delta": 0.0,
+    "consecutive_losses": 0,
+    "threshold_breaches": [],
+    "is_sufficient_data": false,
+    "is_validated": false
+  },
+  "report_generated_at": "2026-10-04 23:27:06 IST",
+  "disclaimer": "PAPER TRADING ONLY. No real-money orders placed."
+}

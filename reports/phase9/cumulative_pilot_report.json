@@ -1,0 +1,264 @@
+{
+  "title": "Phase 9 Cumulative Controlled Paper Trading Pilot Report",
+  "disclaimer": "PAPER TRADING ONLY \u2014 NO REAL MONEY ORDERS",
+  "generated_at": "2026-10-04T23:27:09.551306",
+  "total_sessions": 7,
+  "total_trades": 1,
+  "financial_summary": {
+    "gross_pnl": 380.0,
+    "transaction_costs": 59.67,
+    "slippage": 20.0,
+    "net_pnl": 320.33
+  },
+  "performance_metrics": {
+    "winning_trades": 1,
+    "losing_trades": 0,
+    "win_rate_pct": 100.0,
+    "expectancy_inr": 320.33,
+    "profit_factor": 99.0,
+    "avg_win_inr": 320.33,
+    "avg_loss_inr": 0.0,
+    "total_net_pnl": 320.33
+  },
+  "milestone": {
+    "stage": "INSUFFICIENT",
+    "label": "Insufficient Sample (<30)",
+    "next_milestone": 30,
+    "progress_pct": 3.3,
+    "scientific_interpretation": "Sample size is too small to differentiate signal from market noise. Zero statistical conclusions permitted."
+  },
+  "verdict": {
+    "verdict": "INSUFFICIENT LIVE PAPER DATA",
+    "explanation": "Sample size (1 trades) is below the minimum threshold of 30 trades. No statistical conclusions can be drawn about strategy performance.",
+    "sample_size": 1,
+    "is_high_confidence": false,
+    "prohibited_terms_audited": true,
+    "disclaimer": "PAPER TRADING ONLY \u2014 Scientific research simulation. Zero real money orders."
+  },
+  "backtest_comparison": {
+    "sample_size": 1,
+    "baseline_source": "FALLBACK_DEFAULTS",
+    "strategy_version": "VWAP_EMA_MOMENTUM_V1",
+    "classification": "INSUFFICIENT_SAMPLE_FOR_CLASSIFICATION",
+    "comparison": {
+      "win_rate": {
+        "backtest": 55.0,
+        "paper": 100.0,
+        "drift": 45.0,
+        "status": "PASS"
+      },
+      "expectancy": {
+        "backtest": 150.0,
+        "paper": 320.33,
+        "drift": 170.33,
+        "status": "PASS"
+      },
+      "profit_factor": {
+        "backtest": 1.5,
+        "paper": 99.0,
+        "drift": 97.5,
+        "status": "PASS"
+      },
+      "avg_win": {
+        "backtest": 350.0,
+        "paper": 320.33
+      },
+      "avg_loss": {
+        "backtest": 200.0,
+        "paper": 0.0
+      },
+      "max_drawdown_inr": {
+        "paper": 0.0
+      },
+      "holding_time_minutes": {
+        "backtest": 45.0,
+        "paper": 0.0
+      },
+      "financials": {
+        "gross_pnl": 380.0,
+        "transaction_costs": 59.67,
+        "slippage": 20.0,
+        "net_pnl": 320.33
+      }
+    },
+    "disclaimer": "PAPER TRADING ONLY \u2014 Real-money order execution is strictly disabled."
+  },
+  "regime_performance": {
+    "total_trades_analyzed": 1,
+    "regimes": {
+      "TRENDING_UP": {
+        "trade_count": 1,
+        "win_rate_pct": 100.0,
+        "expectancy_inr": 320.33,
+        "gross_pnl": 380.0,
+        "net_pnl": 320.33,
+        "profit_factor": 99.0,
+        "max_drawdown": 0.0,
+        "avg_holding_minutes": 0.0
+      },
+      "TRENDING_DOWN": {
+        "trade_count": 0,
+        "win_rate_pct": 0.0,
+        "expectancy_inr": 0.0,
+        "gross_pnl": 0.0,
+        "net_pnl": 0.0,
+        "profit_factor": 0.0,
+        "max_drawdown": 0.0,
+        "avg_holding_minutes": 0.0
+      },
+      "RANGE_BOUND": {
+        "trade_count": 0,
+        "win_rate_pct": 0.0,
+        "expectancy_inr": 0.0,
+        "gross_pnl": 0.0,
+        "net_pnl": 0.0,
+        "profit_factor": 0.0,
+        "max_drawdown": 0.0,
+        "avg_holding_minutes": 0.0
+      },
+      "HIGH_VOLATILITY": {
+        "trade_count": 0,
+        "win_rate_pct": 0.0,
+        "expectancy_inr": 0.0,
+        "gross_pnl": 0.0,
+        "net_pnl": 0.0,
+        "profit_factor": 0.0,
+        "max_drawdown": 0.0,
+        "avg_holding_minutes": 0.0
+      },
+      "LOW_VOLATILITY": {
+        "trade_count": 0,
+        "win_rate_pct": 0.0,
+        "expectancy_inr": 0.0,
+        "gross_pnl": 0.0,
+        "net_pnl": 0.0,
+        "profit_factor": 0.0,
+        "max_drawdown": 0.0,
+        "avg_holding_minutes": 0.0
+      },
+      "GAP_UP": {
+        "trade_count": 0,
+        "win_rate_pct": 0.0,
+        "expectancy_inr": 0.0,
+        "gross_pnl": 0.0,
+        "net_pnl": 0.0,
+        "profit_factor": 0.0,
+        "max_drawdown": 0.0,
+        "avg_holding_minutes": 0.0
+      },
+      "GAP_DOWN": {
+        "trade_count": 0,
+        "win_rate_pct": 0.0,
+        "expectancy_inr": 0.0,
+        "gross_pnl": 0.0,
+        "net_pnl": 0.0,
+        "profit_factor": 0.0,
+        "max_drawdown": 0.0,
+        "avg_holding_minutes": 0.0
+      },
+      "BREAKOUT": {
+        "trade_count": 0,
+        "win_rate_pct": 0.0,
+        "expectancy_inr": 0.0,
+        "gross_pnl": 0.0,
+        "net_pnl": 0.0,
+        "profit_factor": 0.0,
+        "max_drawdown": 0.0,
+        "avg_holding_minutes": 0.0
+      },
+      "BREAKDOWN": {
+        "trade_count": 0,
+        "win_rate_pct": 0.0,
+        "expectancy_inr": 0.0,
+        "gross_pnl": 0.0,
+        "net_pnl": 0.0,
+        "profit_factor": 0.0,
+        "max_drawdown": 0.0,
+        "avg_holding_minutes": 0.0
+      },
+      "OTHER": {
+        "trade_count": 0,
+        "win_rate_pct": 0.0,
+        "expectancy_inr": 0.0,
+        "gross_pnl": 0.0,
+        "net_pnl": 0.0,
+        "profit_factor": 0.0,
+        "max_drawdown": 0.0,
+        "avg_holding_minutes": 0.0
+      }
+    },
+    "best_regime": "TRENDING_UP",
+    "worst_regime": "TRENDING_UP",
+    "disclaimer": "PAPER TRADING ONLY \u2014 Regimes are observed without algorithmic tuning or auto-disabling."
+  },
+  "time_performance": {
+    "total_trades_analyzed": 1,
+    "time_slots": {
+      "09:15\u201310:00": {
+        "trade_count": 0,
+        "win_rate_pct": 0.0,
+        "expectancy_inr": 0.0,
+        "net_pnl": 0.0,
+        "avg_slippage_inr": 0.0,
+        "max_drawdown": 0.0
+      },
+      "10:00\u201311:30": {
+        "trade_count": 1,
+        "win_rate_pct": 100.0,
+        "expectancy_inr": 320.33,
+        "net_pnl": 320.33,
+        "avg_slippage_inr": 20.0,
+        "max_drawdown": 0.0
+      },
+      "11:30\u201313:30": {
+        "trade_count": 0,
+        "win_rate_pct": 0.0,
+        "expectancy_inr": 0.0,
+        "net_pnl": 0.0,
+        "avg_slippage_inr": 0.0,
+        "max_drawdown": 0.0
+      },
+      "13:30\u201314:30": {
+        "trade_count": 0,
+        "win_rate_pct": 0.0,
+        "expectancy_inr": 0.0,
+        "net_pnl": 0.0,
+        "avg_slippage_inr": 0.0,
+        "max_drawdown": 0.0
+      },
+      "14:30\u201315:15": {
+        "trade_count": 0,
+        "win_rate_pct": 0.0,
+        "expectancy_inr": 0.0,
+        "net_pnl": 0.0,
+        "avg_slippage_inr": 0.0,
+        "max_drawdown": 0.0
+      }
+    },
+    "best_time_slot": "10:00\u201311:30",
+    "worst_time_slot": "10:00\u201311:30",
+    "disclaimer": "PAPER TRADING ONLY \u2014 Shows empirical intraday distribution of strategy edge."
+  },
+  "concentration": {
+    "total_trades": 1,
+    "active_symbols_count": 1,
+    "top1_contribution_pct": 84.3,
+    "top3_contribution_pct": 84.3,
+    "top5_contribution_pct": 84.3,
+    "concentration_risk": "HIGH_CONCENTRATION_RISK",
+    "warning": "High concentration risk: Top symbol (INFY) contributes 84.3% of total profit.",
+    "symbols": [
+      {
+        "symbol": "INFY",
+        "trade_count": 1,
+        "gross_pnl": 380.0,
+        "net_pnl": 320.33,
+        "wins": 1,
+        "losses": 0,
+        "win_rate_pct": 100.0,
+        "contribution_pct": 84.3
+      }
+    ],
+    "disclaimer": "PAPER TRADING ONLY \u2014 Symbol performance reflects simulated execution."
+  }
+}

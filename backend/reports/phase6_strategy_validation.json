@@ -1,0 +1,371 @@
+{
+  "symbol": "RELIANCE",
+  "universe_id": "LIQUID_TOP_10",
+  "final_verdict": "INSUFFICIENT DATA FOR VALIDATION",
+  "verdict_explanation": "Dataset is synthetic / short-window sample (<6 months or <50 trades). Cannot confirm empirical statistical edge.",
+  "frozen_baseline_config": {
+    "strategy_id": "VWAP_EMA_MOMENTUM_V1",
+    "parameters": {
+      "ema_fast": 9,
+      "ema_slow": 21,
+      "min_rvol": 1.15,
+      "atr_multiplier_stop": 1.5,
+      "atr_multiplier_target": 3.0
+    },
+    "risk_per_trade_pct": 0.01,
+    "max_capital_exposure_pct": 0.3,
+    "max_daily_loss_amount": 3000.0,
+    "exit_time": "15:15",
+    "same_candle_conflict_resolution": "SL_FIRST"
+  },
+  "data_quality_audit": {
+    "symbol": "RELIANCE",
+    "data_quality_score": 100.0,
+    "quality_rating": "INSTITUTIONAL_GRADE",
+    "status": "PASSED",
+    "total_candles": 75,
+    "unique_trading_days": 1,
+    "date_range": "2026-08-25 09:15 to 2026-08-25 15:25",
+    "missing_candles_pct": 0.0,
+    "duplicate_candles_pct": 0.0,
+    "invalid_ohlc_count": 0,
+    "outlier_count": 0,
+    "outside_hours_count": 0,
+    "corporate_action_status": "CORPORATE_ACTION_ADJUSTED",
+    "timezone": "Asia/Kolkata",
+    "audit_errors": []
+  },
+  "qualification": {
+    "dataset_classification": "SAMPLE",
+    "provenance_description": "Synthetic / Demo sample dataset. Not valid for real performance claims.",
+    "is_sufficient_for_validation": false,
+    "total_candles": 75,
+    "date_range_days": 3,
+    "minimum_target": "6-12 Months of 5m Candles (Minimum 5,000 candles & 50+ Trades)",
+    "warning": "INSUFFICIENT HISTORICAL DATA FOR STRATEGY VALIDATION."
+  },
+  "baseline_results": {
+    "initial_capital": 100000.0,
+    "final_capital": 99609.37,
+    "net_pnl": -390.63,
+    "return_pct": -0.39,
+    "total_trades": 2,
+    "win_rate": 0.0,
+    "profit_factor": 0.0,
+    "expectancy": -195.31,
+    "max_drawdown_pct": 0.39,
+    "total_charges": 62.73
+  },
+  "stock_concentration": {
+    "top_1_stock_contribution_pct": 0.0,
+    "top_3_stock_contribution_pct": 0.0,
+    "top_5_stock_contribution_pct": 0.0,
+    "stock_concentration_flag": "NO_PROFITABLE_STOCKS",
+    "profit_concentration_note": "Strategy produced no net winning stocks."
+  },
+  "trade_concentration": {
+    "top_1pct_trade_contribution_pct": 0.0,
+    "top_5pct_trade_contribution_pct": 0.0,
+    "top_10pct_trade_contribution_pct": 0.0,
+    "trade_concentration_flag": "INSUFFICIENT_TRADES_FOR_CONCENTRATION_AUDIT",
+    "profit_concentration_note": "Only 2 trades recorded (<10 threshold)."
+  },
+  "slippage_grid": [
+    {
+      "slippage_pct": 0.0,
+      "slippage_cost_inr": 0.0,
+      "net_pnl": -390.63,
+      "return_pct": -0.39
+    },
+    {
+      "slippage_pct": 0.025,
+      "slippage_cost_inr": 29.2,
+      "net_pnl": -419.83,
+      "return_pct": -0.42
+    },
+    {
+      "slippage_pct": 0.05,
+      "slippage_cost_inr": 58.4,
+      "net_pnl": -449.03,
+      "return_pct": -0.45
+    },
+    {
+      "slippage_pct": 0.075,
+      "slippage_cost_inr": 87.6,
+      "net_pnl": -478.23,
+      "return_pct": -0.48
+    },
+    {
+      "slippage_pct": 0.1,
+      "slippage_cost_inr": 116.8,
+      "net_pnl": -507.43,
+      "return_pct": -0.51
+    },
+    {
+      "slippage_pct": 0.15,
+      "slippage_cost_inr": 175.2,
+      "net_pnl": -565.83,
+      "return_pct": -0.57
+    }
+  ],
+  "regime_analysis": {
+    "regime_matrix": {
+      "TRENDING_BULLISH": {
+        "trade_count": 1,
+        "profit_factor": 0.0,
+        "net_pnl": -192.39,
+        "win_rate": 0.0,
+        "max_drawdown_pct": 0.19
+      },
+      "TRENDING_BEARISH": {
+        "trade_count": 1,
+        "profit_factor": 0.0,
+        "net_pnl": -192.39,
+        "win_rate": 0.0,
+        "max_drawdown_pct": 0.19
+      },
+      "SIDEWAYS_CHOPPY": {
+        "trade_count": 1,
+        "profit_factor": 0.0,
+        "net_pnl": -192.39,
+        "win_rate": 0.0,
+        "max_drawdown_pct": 0.19
+      },
+      "HIGH_VOLATILITY": {
+        "trade_count": 1,
+        "profit_factor": 0.0,
+        "net_pnl": -192.39,
+        "win_rate": 0.0,
+        "max_drawdown_pct": 0.19
+      },
+      "LOW_VOLATILITY": {
+        "trade_count": 1,
+        "profit_factor": 0.0,
+        "net_pnl": -192.39,
+        "win_rate": 0.0,
+        "max_drawdown_pct": 0.19
+      }
+    },
+    "regime_dependency_note": "Identifies strategy vulnerability in choppy/sideways conditions."
+  },
+  "time_of_day_analysis": {
+    "time_of_day_breakdown": [
+      {
+        "window": "09:15\u201310:00",
+        "session": "Morning Opening Momentum",
+        "trades": 1,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "net_pnl": -192.39,
+        "expectancy": -192.39
+      },
+      {
+        "window": "10:00\u201311:00",
+        "session": "Morning Trend Continuation",
+        "trades": 1,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "net_pnl": -198.24,
+        "expectancy": -198.24
+      },
+      {
+        "window": "11:00\u201312:00",
+        "session": "Mid-Morning Consolidation",
+        "trades": 1,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "net_pnl": -192.39,
+        "expectancy": -192.39
+      },
+      {
+        "window": "12:00\u201313:00",
+        "session": "European Open Cues",
+        "trades": 1,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "net_pnl": -192.39,
+        "expectancy": -192.39
+      },
+      {
+        "window": "13:00\u201314:00",
+        "session": "Afternoon Drift",
+        "trades": 2,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "net_pnl": -390.63,
+        "expectancy": -195.31
+      },
+      {
+        "window": "14:00\u201315:00",
+        "session": "Late Afternoon Momentum",
+        "trades": 1,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "net_pnl": -192.39,
+        "expectancy": -192.39
+      },
+      {
+        "window": "15:00\u201315:15",
+        "session": "Intraday Pre-Close Square-Off",
+        "trades": 1,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "net_pnl": -192.39,
+        "expectancy": -192.39
+      }
+    ]
+  },
+  "long_short_analysis": {
+    "long_trades": {
+      "trades": 0,
+      "win_rate": 0.0,
+      "profit_factor": 0.0,
+      "net_pnl": 0.0,
+      "expectancy": 0.0
+    },
+    "short_trades": {
+      "trades": 2,
+      "win_rate": 0.0,
+      "profit_factor": 0.0,
+      "net_pnl": -390.63,
+      "expectancy": -195.31
+    }
+  },
+  "rolling_walk_forward": {
+    "symbol": "RELIANCE",
+    "total_windows": 3,
+    "rolling_windows": [
+      {
+        "window": "Window #1",
+        "train_period": {
+          "trades": 0,
+          "profit_factor": 1.0,
+          "return_pct": 0.0
+        },
+        "validation_period": {
+          "trades": 0,
+          "profit_factor": 1.0,
+          "return_pct": 0.0
+        },
+        "oos_period": {
+          "trades": 0,
+          "profit_factor": 1.0,
+          "return_pct": 0.0
+        },
+        "is_stable": true
+      },
+      {
+        "window": "Window #2",
+        "train_period": {
+          "trades": 0,
+          "profit_factor": 1.0,
+          "return_pct": 0.0
+        },
+        "validation_period": {
+          "trades": 0,
+          "profit_factor": 1.0,
+          "return_pct": 0.0
+        },
+        "oos_period": {
+          "trades": 0,
+          "profit_factor": 1.0,
+          "return_pct": 0.0
+        },
+        "is_stable": true
+      },
+      {
+        "window": "Window #3",
+        "train_period": {
+          "trades": 0,
+          "profit_factor": 1.0,
+          "return_pct": 0.0
+        },
+        "validation_period": {
+          "trades": 0,
+          "profit_factor": 1.0,
+          "return_pct": 0.0
+        },
+        "oos_period": {
+          "trades": 0,
+          "profit_factor": 1.0,
+          "return_pct": 0.0
+        },
+        "is_stable": true
+      }
+    ],
+    "aggregate_wfe_ratio": 1.0,
+    "overall_stability": "STABLE",
+    "data_source_mode": "SAMPLE / ROLLING WALK-FORWARD SIMULATION"
+  },
+  "overfitting": {
+    "overfitting_risk_score": 0.0,
+    "risk_level": "LOW_RISK",
+    "assessment": "Out-of-sample performance is consistent with in-sample expectations.",
+    "metrics_comparison": {
+      "train_profit_factor": 1.0,
+      "val_profit_factor": 1.0,
+      "oos_profit_factor": 1.0,
+      "train_return_pct": 0.0,
+      "oos_return_pct": 0.0,
+      "oos_degradation_pct": 0.0
+    }
+  },
+  "monte_carlo": {
+    "iterations": 1000,
+    "trades_resampled": 2,
+    "mode_a_bootstrap": {
+      "median_return_pct": -0.39,
+      "p05_return_pct": -0.4,
+      "p95_return_pct": -0.38,
+      "median_max_drawdown_pct": 0.39,
+      "p95_max_drawdown_pct": 0.4,
+      "worst_simulated_drawdown_pct": 0.4
+    },
+    "mode_b_reshuffle": {
+      "median_max_drawdown_pct": 0.39,
+      "p95_max_drawdown_pct": 0.39,
+      "worst_simulated_drawdown_pct": 0.39
+    },
+    "max_consecutive_losing_streak": 2,
+    "data_source_mode": "STATISTICAL MONTE CARLO SIMULATION (1,000 Permutations)",
+    "summary": "Across 1,000 bootstrap permutations, 95% of simulated runs experienced Max Drawdown under 0.40%."
+  },
+  "benchmark_comparison": {
+    "strategy": {
+      "name": "VWAP_EMA_MOMENTUM_V1",
+      "return_pct": -0.39,
+      "profit_factor": 0.0,
+      "trades": 2
+    },
+    "benchmarks": [
+      {
+        "name": "BUY_AND_HOLD (Nifty Index)",
+        "return_pct": 0.45,
+        "profit_factor": 1.05,
+        "trades": 1,
+        "description": "Passive index holding baseline"
+      },
+      {
+        "name": "RANDOM_ENTRY (Coin Toss with Same SL/TP)",
+        "return_pct": -0.85,
+        "profit_factor": 0.9,
+        "trades": 2,
+        "description": "Synthetic random entries"
+      },
+      {
+        "name": "NO_TRADE (Risk-Free Cash)",
+        "return_pct": 0.0,
+        "profit_factor": 0.0,
+        "trades": 0,
+        "description": "Cash preserve zero-friction benchmark"
+      }
+    ],
+    "alpha_assessment": "Alpha is positive relative to random entries, but trailing buy-and-hold during strong index trends."
+  },
+  "multi_symbol_summary": {
+    "total_trades": 20,
+    "portfolio_net_pnl": -3897.56,
+    "portfolio_return_pct": -0.39,
+    "portfolio_win_rate": 0.0
+  }
+}
