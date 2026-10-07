@@ -1,0 +1,37 @@
+# secrets and broker sessions — never commit
+.env
+backend/.env
+*.env
+!.env.example
+!backend/.env.example
+angel_tokens.json
+*_tokens.json
+*.session
+
+# databases and market data
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+backend/data/
+backend/parquet/
+*.parquet
+
+# python
+__pycache__/
+*.pyc
+venv/
+.venv/
+.pytest_cache/
+
+# node / next
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+tsconfig.tsbuildinfo
+
+# docker / os / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
