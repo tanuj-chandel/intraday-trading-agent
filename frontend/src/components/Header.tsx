@@ -38,6 +38,7 @@ export const Header: React.FC<HeaderProps> = ({
   const isLivePage = pathname === "/live";
   const isPhase9 = pathname === "/phase9";
   const isGoLive = pathname === "/go-live";
+  const isReports = pathname === "/reports";
 
   return (
     <header className="bg-[#121721] border-b border-[#1e2638] px-4 py-3 sticky top-0 z-40">
@@ -156,6 +157,18 @@ export const Header: React.FC<HeaderProps> = ({
             >
               <ShieldAlert className="h-3.5 w-3.5" />
               Go-Live Readiness
+            </Link>
+
+            <Link
+              href="/reports"
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-bold transition-all ${
+                isReports
+                  ? "bg-cyan-600 text-white shadow"
+                  : "text-gray-400 hover:text-gray-200"
+              }`}
+            >
+              <FileText className="h-3.5 w-3.5" />
+              Pilot Reports
             </Link>
           </div>
         </div>

@@ -470,4 +470,21 @@ export async function triggerEodReport(): Promise<any> {
   return res.json();
 }
 
+// ==========================================
+// PHASE 9: CUMULATIVE EVIDENCE REPORT APIs
+// ==========================================
+
+export async function fetchCumulativePilotReport(): Promise<any> {
+  const res = await fetch(`${API_BASE}/phase9/report?report_type=cumulative`, { cache: "no-store" });
+  if (!res.ok) throw new Error("Failed to fetch cumulative pilot report");
+  return res.json();
+}
+
+export async function fetchPilotSessions(limit: number = 50): Promise<any> {
+  const res = await fetch(`${API_BASE}/phase9/sessions?limit=${limit}`, { cache: "no-store" });
+  if (!res.ok) throw new Error("Failed to fetch pilot sessions");
+  return res.json();
+}
+
+
 

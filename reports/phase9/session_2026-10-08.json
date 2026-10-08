@@ -1,0 +1,231 @@
+{
+  "title": "Phase 9 Controlled Paper Trading Daily Session Report \u2014 2026-10-08",
+  "disclaimer": "PAPER TRADING ONLY \u2014 NO REAL MONEY ORDERS",
+  "session_id": "SESS-2026-10-08-002",
+  "trading_date": "2026-10-08",
+  "generated_at": "2026-10-08T23:53:01.739971",
+  "1_data_provenance": {
+    "provider": "ZERODHA_KITE",
+    "provenance_state": "LIVE",
+    "is_genuine_live": true
+  },
+  "2_session_health": {
+    "status": "CLOSED",
+    "valid_ticks": 0,
+    "rejected_ticks": 0
+  },
+  "3_signals": {
+    "generated": 0,
+    "approved": 0,
+    "rejected": 0
+  },
+  "4_trades": {
+    "executed": 0,
+    "winning": 0,
+    "losing": 0
+  },
+  "5_gross_pnl": 0.0,
+  "6_transaction_costs": 0.0,
+  "7_slippage": 0.0,
+  "8_net_pnl": 0.0,
+  "9_drawdown": 0.0,
+  "10_win_rate_pct": 0.0,
+  "11_expectancy_inr": 0.0,
+  "12_regime_performance": {
+    "TRENDING_UP": {
+      "trade_count": 0,
+      "win_rate_pct": 0.0,
+      "expectancy_inr": 0.0,
+      "gross_pnl": 0.0,
+      "net_pnl": 0.0,
+      "profit_factor": 0.0,
+      "max_drawdown": 0.0,
+      "avg_holding_minutes": 0.0
+    },
+    "TRENDING_DOWN": {
+      "trade_count": 0,
+      "win_rate_pct": 0.0,
+      "expectancy_inr": 0.0,
+      "gross_pnl": 0.0,
+      "net_pnl": 0.0,
+      "profit_factor": 0.0,
+      "max_drawdown": 0.0,
+      "avg_holding_minutes": 0.0
+    },
+    "RANGE_BOUND": {
+      "trade_count": 0,
+      "win_rate_pct": 0.0,
+      "expectancy_inr": 0.0,
+      "gross_pnl": 0.0,
+      "net_pnl": 0.0,
+      "profit_factor": 0.0,
+      "max_drawdown": 0.0,
+      "avg_holding_minutes": 0.0
+    },
+    "HIGH_VOLATILITY": {
+      "trade_count": 0,
+      "win_rate_pct": 0.0,
+      "expectancy_inr": 0.0,
+      "gross_pnl": 0.0,
+      "net_pnl": 0.0,
+      "profit_factor": 0.0,
+      "max_drawdown": 0.0,
+      "avg_holding_minutes": 0.0
+    },
+    "LOW_VOLATILITY": {
+      "trade_count": 0,
+      "win_rate_pct": 0.0,
+      "expectancy_inr": 0.0,
+      "gross_pnl": 0.0,
+      "net_pnl": 0.0,
+      "profit_factor": 0.0,
+      "max_drawdown": 0.0,
+      "avg_holding_minutes": 0.0
+    },
+    "GAP_UP": {
+      "trade_count": 0,
+      "win_rate_pct": 0.0,
+      "expectancy_inr": 0.0,
+      "gross_pnl": 0.0,
+      "net_pnl": 0.0,
+      "profit_factor": 0.0,
+      "max_drawdown": 0.0,
+      "avg_holding_minutes": 0.0
+    },
+    "GAP_DOWN": {
+      "trade_count": 0,
+      "win_rate_pct": 0.0,
+      "expectancy_inr": 0.0,
+      "gross_pnl": 0.0,
+      "net_pnl": 0.0,
+      "profit_factor": 0.0,
+      "max_drawdown": 0.0,
+      "avg_holding_minutes": 0.0
+    },
+    "BREAKOUT": {
+      "trade_count": 0,
+      "win_rate_pct": 0.0,
+      "expectancy_inr": 0.0,
+      "gross_pnl": 0.0,
+      "net_pnl": 0.0,
+      "profit_factor": 0.0,
+      "max_drawdown": 0.0,
+      "avg_holding_minutes": 0.0
+    },
+    "BREAKDOWN": {
+      "trade_count": 0,
+      "win_rate_pct": 0.0,
+      "expectancy_inr": 0.0,
+      "gross_pnl": 0.0,
+      "net_pnl": 0.0,
+      "profit_factor": 0.0,
+      "max_drawdown": 0.0,
+      "avg_holding_minutes": 0.0
+    },
+    "OTHER": {
+      "trade_count": 0,
+      "win_rate_pct": 0.0,
+      "expectancy_inr": 0.0,
+      "gross_pnl": 0.0,
+      "net_pnl": 0.0,
+      "profit_factor": 0.0,
+      "max_drawdown": 0.0,
+      "avg_holding_minutes": 0.0
+    }
+  },
+  "13_time_of_day_performance": {
+    "09:15\u201310:00": {
+      "trade_count": 0,
+      "win_rate_pct": 0.0,
+      "expectancy_inr": 0.0,
+      "net_pnl": 0.0,
+      "avg_slippage_inr": 0.0,
+      "max_drawdown": 0.0
+    },
+    "10:00\u201311:30": {
+      "trade_count": 0,
+      "win_rate_pct": 0.0,
+      "expectancy_inr": 0.0,
+      "net_pnl": 0.0,
+      "avg_slippage_inr": 0.0,
+      "max_drawdown": 0.0
+    },
+    "11:30\u201313:30": {
+      "trade_count": 0,
+      "win_rate_pct": 0.0,
+      "expectancy_inr": 0.0,
+      "net_pnl": 0.0,
+      "avg_slippage_inr": 0.0,
+      "max_drawdown": 0.0
+    },
+    "13:30\u201314:30": {
+      "trade_count": 0,
+      "win_rate_pct": 0.0,
+      "expectancy_inr": 0.0,
+      "net_pnl": 0.0,
+      "avg_slippage_inr": 0.0,
+      "max_drawdown": 0.0
+    },
+    "14:30\u201315:15": {
+      "trade_count": 0,
+      "win_rate_pct": 0.0,
+      "expectancy_inr": 0.0,
+      "net_pnl": 0.0,
+      "avg_slippage_inr": 0.0,
+      "max_drawdown": 0.0
+    }
+  },
+  "14_symbol_concentration": {
+    "total_trades": 0,
+    "active_symbols_count": 0,
+    "symbols": [],
+    "top1_contribution_pct": 0.0,
+    "top3_contribution_pct": 0.0,
+    "top5_contribution_pct": 0.0,
+    "concentration_risk": "LOW",
+    "disclaimer": "PAPER TRADING ONLY."
+  },
+  "15_data_quality_incidents": 0,
+  "16_kill_switch_events": 0,
+  "17_comparison_with_phase6": {
+    "status": "NO_PAPER_TRADES",
+    "sample_size": 0,
+    "baseline_source": "FALLBACK_DEFAULTS",
+    "strategy_version": "VWAP_EMA_MOMENTUM_V1",
+    "comparison": {},
+    "verdict": "INSUFFICIENT LIVE PAPER DATA",
+    "disclaimer": "PAPER TRADING ONLY \u2014 Baseline frozen from Phase 6."
+  },
+  "18_statistical_evidence": {
+    "sample_size": 0,
+    "milestone": {
+      "stage": "INSUFFICIENT",
+      "label": "Insufficient Sample (<30)",
+      "next_milestone": 30,
+      "progress_pct": 0.0,
+      "scientific_interpretation": "Sample size is too small to differentiate signal from market noise. Zero statistical conclusions permitted."
+    },
+    "metrics": {},
+    "bootstrap": {},
+    "bootstrap_95ci": {},
+    "monte_carlo": {},
+    "monte_carlo_forward": {},
+    "probabilities": {},
+    "disclaimer": "PAPER TRADING ONLY \u2014 Zero real money orders."
+  },
+  "19_validation_milestone": {
+    "stage": "INSUFFICIENT",
+    "label": "Insufficient Sample (<30)",
+    "next_milestone": 30,
+    "progress_pct": 0.0,
+    "scientific_interpretation": "Sample size is too small to differentiate signal from market noise. Zero statistical conclusions permitted."
+  },
+  "20_scientific_interpretation": {
+    "verdict": "INSUFFICIENT LIVE PAPER DATA",
+    "explanation": "Sample size (0 trades) is below the minimum threshold of 30 trades. No statistical conclusions can be drawn about strategy performance.",
+    "sample_size": 0,
+    "is_high_confidence": false,
+    "prohibited_terms_audited": true,
+    "disclaimer": "PAPER TRADING ONLY \u2014 Scientific research simulation. Zero real money orders."
+  }
+}

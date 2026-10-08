@@ -11,7 +11,7 @@
 |---|---|
 | **Scientific Verdict** | **INSUFFICIENT LIVE PAPER DATA** |
 | **Milestone Stage** | **INSUFFICIENT** |
-| **Total Pilot Sessions** | `7` |
+| **Total Pilot Sessions** | `10` |
 | **Total Cumulative Trades** | `1` |
 | **Total Net Realized P&L** | **₹320.33** |
 | **Total Gross P&L** | ₹380.00 |

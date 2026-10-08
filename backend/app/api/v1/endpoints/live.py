@@ -85,7 +85,7 @@ def get_live_performance():
 def approve_live_signal(signal_id: int):
     sig = live_streamer.signal_engine.get_signal(signal_id)
     if not sig:
-        raise HTTPException(status_code=404, detail=f"Signal #{signal_id} not found.")
+        raise HTTPException(status_code=400, detail=f"Signal #{signal_id} not found.")
 
     if sig.status in ("EXECUTED", "REJECTED", "EXPIRED", "CANCELLED"):
         return {

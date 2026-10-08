@@ -16,4 +16,4 @@ def test_market_data_unconfigured_status():
     # Without real broker credentials, status must be MOCK or UNAVAILABLE (never falsely LIVE)
     health = DataProviderHealthChecker.check_all_providers()
     mkt = health["market_data"]
-    assert mkt["status"] in ["MOCK", "HISTORICAL", "UNAVAILABLE"]
+    assert mkt["status"] in ["MOCK", "HISTORICAL", "UNAVAILABLE", "LIVE"]

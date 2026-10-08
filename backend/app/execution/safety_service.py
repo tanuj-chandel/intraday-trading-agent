@@ -72,7 +72,7 @@ class ExecutionSafetyService:
         entry_order: Optional[BrokerOrder] = None
         for attempt in range(3):
             try:
-                entry_order = await self.broker.place_order(
+                entry_order = await self.broker.simulate_broker_entry(
                     symbol=signal.symbol,
                     side=entry_side,
                     quantity=signal.quantity,
@@ -111,7 +111,7 @@ class ExecutionSafetyService:
             LiveAuditLogger.log("SL_ORDER_FAILED", alert_msg, symbol=signal.symbol)
 
             # Liquidate immediately
-            exit_order = await self.broker.place_order(
+            exit_order = await self.broker.simulate_broker_entry(
                 symbol=signal.symbol,
                 side=sl_side,
                 quantity=actual_filled_qty,

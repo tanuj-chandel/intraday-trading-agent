@@ -51,7 +51,7 @@ class AbstractBroker(abc.ABC):
     """Abstract Base Class for Broker execution."""
 
     @abc.abstractmethod
-    async def place_order(
+    async def simulate_broker_entry(
         self,
         symbol: str,
         side: str,
@@ -76,7 +76,7 @@ class AbstractBroker(abc.ABC):
         pass
 
     @abc.abstractmethod
-    async def cancel_order(self, order_id: str) -> bool:
+    async def simulate_broker_cancel(self, order_id: str) -> bool:
         pass
 
     @abc.abstractmethod
@@ -106,7 +106,7 @@ class PaperBroker(AbstractBroker):
         self.fail_next_sl: bool = False  # Test hook
         self.partial_fill_next: bool = False  # Test hook
 
-    async def place_order(
+    async def simulate_broker_entry(
         self,
         symbol: str,
         side: str,
@@ -229,7 +229,7 @@ class PaperBroker(AbstractBroker):
         self._idempotency_map[key] = order_id
         return sl_order
 
-    async def cancel_order(self, order_id: str) -> bool:
+    async def simulate_broker_cancel(self, order_id: str) -> bool:
         if order_id in self._orders:
             self._orders[order_id].state = OrderState.CANCELLED
             self._orders[order_id].updated_at = datetime.datetime.now()
@@ -266,7 +266,7 @@ class LiveBroker(AbstractBroker):
                 "or IS_PAPER_TRADING=True. Real order placement permanently blocked."
             )
 
-    async def place_order(self, *args, **kwargs) -> BrokerOrder:
+    async def simulate_broker_entry(self, *args, **kwargs) -> BrokerOrder:
         self._verify_live_guard()
         raise NotImplementedError("Live broker order placement stub.")
 
@@ -274,7 +274,7 @@ class LiveBroker(AbstractBroker):
         self._verify_live_guard()
         raise NotImplementedError("Live broker SL order placement stub.")
 
-    async def cancel_order(self, *args, **kwargs) -> bool:
+    async def simulate_broker_cancel(self, *args, **kwargs) -> bool:
         self._verify_live_guard()
         return False
 

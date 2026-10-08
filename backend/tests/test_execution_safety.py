@@ -84,7 +84,7 @@ async def test_duplicate_signal_idempotency_prevents_double_order(sample_signal)
     broker = PaperBroker()
     safety = ExecutionSafetyService(broker=broker)
 
-    order1 = await broker.place_order(
+    order1 = await broker.simulate_broker_entry(
         symbol=sample_signal.symbol,
         side=sample_signal.direction,
         quantity=sample_signal.quantity,
@@ -92,7 +92,7 @@ async def test_duplicate_signal_idempotency_prevents_double_order(sample_signal)
         idempotency_key=f"ENTRY_{sample_signal.id}_{sample_signal.symbol}"
     )
 
-    order2 = await broker.place_order(
+    order2 = await broker.simulate_broker_entry(
         symbol=sample_signal.symbol,
         side=sample_signal.direction,
         quantity=sample_signal.quantity,
@@ -149,4 +149,4 @@ def test_live_broker_refuses_execution_when_live_disabled():
     """LiveBroker stub raises PermissionError when LIVE_TRADING_ENABLED is False."""
     broker = LiveBroker()
     with pytest.raises(PermissionError, match="CRITICAL SAFETY VIOLATION"):
-        asyncio.run(broker.place_order("INFY", "BUY", 10, 1500.0))
+        asyncio.run(broker.simulate_broker_entry("INFY", "BUY", 10, 1500.0))
