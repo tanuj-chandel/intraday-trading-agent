@@ -5,6 +5,7 @@ backend/.env
 !.env.example
 !backend/.env.example
 angel_tokens.json
+backend/angel_tokens.json
 *_tokens.json
 *.session
 
@@ -16,6 +17,9 @@ angel_tokens.json
 backend/data/
 backend/parquet/
 *.parquet
+backend/app/data/storage/
+backend/reports/
+reports/phase9/*.json
 
 # python
 __pycache__/

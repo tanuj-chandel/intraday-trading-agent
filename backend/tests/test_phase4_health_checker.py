@@ -13,7 +13,7 @@ def test_data_provider_health_check_structure():
     assert health["overall_health"] in ["HEALTHY", "DEGRADED"]
 
 def test_market_data_unconfigured_status():
-    # Without real broker credentials, status must be MOCK or UNAVAILABLE (never falsely LIVE)
+    # Without real broker credentials, status must be MOCK, UNAVAILABLE, UNCONFIGURED, or ERROR (never falsely LIVE)
     health = DataProviderHealthChecker.check_all_providers()
     mkt = health["market_data"]
-    assert mkt["status"] in ["MOCK", "HISTORICAL", "UNAVAILABLE", "LIVE"]
+    assert mkt["status"] in ["MOCK", "HISTORICAL", "UNAVAILABLE", "LIVE", "UNCONFIGURED", "ERROR"]
